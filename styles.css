@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 255, 255, 0.801);
+    font-family: Roboto;
+    font-size: 16px;
+
+}
+
+.card{
+    width: 80%;
+    height: 500px;
+    margin: 50px 10%;
+    box-shadow: 0 27px 87px rgba(0,0,0,0.37);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.image{
+    width: 45%;
+    float: left;
+}
+.text{
+    width: 55%;
+    float: left;
+    padding: 70px 40px 70px 40px;
+    margin-top: 60px;
+    
+}
+.text h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #1a1919;
+}
+.text p{
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.25px;
+    color: #2e2e2e;
+    text-indent: 15px;
+}
