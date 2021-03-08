@@ -1,45 +1,81 @@
-* {
-	margin: 0;
+*
+{
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 255, 255, 0.801);
 }
 
-body{
-    background-color: rgba(0, 255, 255, 0.801);
-    font-family: Roboto;
-    font-size: 16px;
-
+.container
+{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
 }
 
-.card{
-    width: 80%;
+.container .card
+{
+    position: relative;
+    max-width: 300px;
+    height: 220px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);    
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover
+{
     height: 500px;
-    margin: 50px 10%;
-    box-shadow: 0 27px 87px rgba(0,0,0,0.37);
-    border-radius: 14px;
-    overflow: hidden;
 }
 
-.image{
-    width: 45%;
-    float: left;
+.container .card .imgBox
+{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 19px;
+    z-index: 1;
+    background-color: #fff;
 }
-.text{
-    width: 55%;
-    float: left;
-    padding: 70px 40px 70px 40px;
-    margin-top: 60px;
-    
+
+.container .card .imgBox img
+{
+    max-width: 100%;
+}    
+
+.container .card .content
+{
+    position: relative;
+    padding: 10px 15px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
-.text h1{
-    font-size: 48px;
-    font-weight: bold;
-    color: #1a1919;
-}
-.text p{
-    font-size: 14px;
-    line-height: 30px;
-    letter-spacing: 0.25px;
-    color: #2e2e2e;
-    text-indent: 15px;
+
+.container .card:hover .content
+{
+    position: relative;
+    padding: 10px 15px;
+    text-indent: 30px;
+    line-height: 150%;
+    margin-top: -40px;
+    color: #111;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
 }
